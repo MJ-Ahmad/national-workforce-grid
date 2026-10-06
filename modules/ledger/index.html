@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Ledger | NWG</title>
+  <link rel="stylesheet" href="../../app/shared/css/module-base.css" />
+</head>
+<body>
+  <div class="module-shell">
+    <aside class="module-sidebar">
+      <div class="sidebar-header">
+        <img src="../../assets/images/logo.svg" alt="NWG" />
+        <div>
+          <p class="eyebrow">Ledger Module</p>
+          <h2>Blockchain Records</h2>
+        </div>
+      </div>
+      <nav id="nav-tree" class="nav-tree"></nav>
+    </aside>
+
+    <main class="module-main">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Module 7</p>
+          <h1>Digital Workforce Ledger</h1>
+        </div>
+        <button id="lang-toggle">EN | BN</button>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card"><span>Total Records</span><strong>12.4M</strong><small>Entries</small></div>
+        <div class="stat-card"><span>Verified Blocks</span><strong>8,945</strong><small>Chain</small></div>
+        <div class="stat-card"><span>Data Integrity</span><strong>100%</strong><small>Verified</small></div>
+        <div class="stat-card"><span>Last Block Hash</span><strong>0xA7B...</strong><small>Latest</small></div>
+      </section>
+
+      <div class="module-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Ledger Entries</h3>
+            <span class="badge">Immutable</span>
+          </div>
+          <div id="ledger-list" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Blockchain Status</h3>
+          </div>
+          <div id="blockchain-status" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="module-panel">
+      <div class="panel">
+        <h3>Chain Security</h3>
+        <p style="margin: 12px 0 0; color: var(--muted);">Status: <strong style="color: #73e0a9;">Secure</strong></p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer"></footer>
+
+  <script type="module">
+    import { initModule } from '../../app/shared/js/module-init.js';
+    await initModule('ledger');
+  </script>
+</body>
+</html>

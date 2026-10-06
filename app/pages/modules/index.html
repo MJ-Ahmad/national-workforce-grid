@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Modules | National Workforce Grid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Inter", "Noto Sans Bengali", sans-serif; background: linear-gradient(135deg, #07131f 0%, #0a1821 100%); color: #edf6ff; padding: 40px 20px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1 { font-size: 2.5rem; margin-bottom: 12px; color: #47d7b3; }
+    .subtitle { color: #a7bfd2; margin-bottom: 40px; }
+    .module-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+    .module-card { background: rgba(15,29,41,0.8); border: 1px solid rgba(121,183,255,0.2); border-radius: 18px; padding: 28px; transition: 0.3s ease; }
+    .module-card:hover { border-color: rgba(71,215,179,0.5); transform: translateY(-4px); }
+    .module-icon { font-size: 3rem; margin-bottom: 12px; }
+    .module-card h2 { font-size: 1.3rem; margin-bottom: 8px; }
+    .module-card p { color: #a7bfd2; line-height: 1.6; margin-bottom: 16px; }
+    .module-link { display: inline-block; padding: 12px 20px; background: linear-gradient(135deg, #47d7b3, #2bbd9c); color: #022539; border-radius: 8px; text-decoration: none; font-weight: 700; }
+    .back-link { display: inline-block; margin-bottom: 30px; padding: 12px 20px; background: rgba(71,215,179,0.1); border: 1px solid #47d7b3; color: #47d7b3; border-radius: 8px; text-decoration: none; }
+    @media (max-width: 768px) {
+      .module-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 1.8rem; }
+    }
+    html[lang="bn"] * { font-family: "Noto Sans Bengali", "Inter", sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/home/" class="back-link">← Back to Dashboard</a>
+    <h1>National Workforce Grid - All Modules</h1>
+    <p class="subtitle">9 integrated systems for complete governance, identity, and operational coordination</p>
+
+    <div class="module-grid" id="modules-container"></div>
+  </div>
+
+  <script>
+    async function loadModules() {
+      const response = await fetch('/app/config/modules.json');
+      const data = await response.json();
+      const container = document.getElementById('modules-container');
+
+      container.innerHTML = data.modules.map(m => `
+        <div class="module-card">
+          <div class="module-icon">${m.icon}</div>
+          <h2>${m.name_en}</h2>
+          <p>${m.description_en}</p>
+          <a href="${m.path}" class="module-link">Open Module →</a>
+        </div>
+      `).join('');
+    }
+
+    loadModules();
+  </script>
+</body>
+</html>

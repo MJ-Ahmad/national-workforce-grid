@@ -1,0 +1,112 @@
+{
+  "modules": [
+    {
+      "id": "identity",
+      "name_en": "Identity & Verification System",
+      "name_bn": "পরিচয় ও যাচাইকরণ ব্যবস্থা",
+      "description_en": "DID-based secure identity management and verification",
+      "description_bn": "ডিআইডি-ভিত্তিক নিরাপদ পরিচয় ব্যবস্থাপনা",
+      "path": "/modules/identity/",
+      "icon": "🛡️",
+      "color": "#47d7b3",
+      "status": "operational",
+      "priority": 1
+    },
+    {
+      "id": "governance",
+      "name_en": "Governance & Smart Contracts",
+      "name_bn": "শাসন ও স্মার্ট কন���ট্রাক্ট",
+      "description_en": "Policy automation and contract management engine",
+      "description_bn": "নীতি স্বয়ংক্রিয়তা ও চুক্তি ব্যবস্থাপনা",
+      "path": "/modules/governance/",
+      "icon": "⚖️",
+      "color": "#79b7ff",
+      "status": "operational",
+      "priority": 2
+    },
+    {
+      "id": "geogrid",
+      "name_en": "Geo-Grid Mapping Infrastructure",
+      "name_bn": "ভৌগোলিক-গ্রিড ম্যাপিং অবকাঠামো",
+      "description_en": "Interactive GIS mapping and geographic coordination",
+      "description_bn": "ইন্টারঅ্যাক্টিভ জিআইএস ম্যাপিং ও ভৌগোলিক সমন্বয়",
+      "path": "/modules/geogrid/",
+      "icon": "🗺️",
+      "color": "#e7b75a",
+      "status": "operational",
+      "priority": 3
+    },
+    {
+      "id": "reporting",
+      "name_en": "Real-Time Reporting & Monitoring",
+      "name_bn": "রিয়েল-টাইম রিপোর্টিং ও পর্যবেক্ষণ",
+      "description_en": "Live monitoring and incident reporting system",
+      "description_bn": "লাইভ পর্যবেক্ষণ এবং ঘটনা রিপোর্টিং সিস্টেম",
+      "path": "/modules/reporting/",
+      "icon": "📊",
+      "color": "#73e0a9",
+      "status": "operational",
+      "priority": 4
+    },
+    {
+      "id": "analytics",
+      "name_en": "Analytics & Recommendation Engine",
+      "name_bn": "বিশ্লেষণ ও সুপারিশ ইঞ্জিন",
+      "description_en": "Performance dashboards and predictive analytics",
+      "description_bn": "কর্মক্ষমতা ড্যাশবোর্ড এবং ভবিষ্যদ্বাণীমূলক বিশ্লেষণ",
+      "path": "/modules/analytics/",
+      "icon": "📈",
+      "color": "#a78bfa",
+      "status": "operational",
+      "priority": 5
+    },
+    {
+      "id": "command",
+      "name_en": "Election & NGO Command Center",
+      "name_bn": "নির্বাচন ও এনজিও কমান্ড সেন্টার",
+      "description_en": "Operational command and deployment coordination",
+      "description_bn": "অপারেশনাল কমান্ড ও স্থাপনা সমন্বয়",
+      "path": "/modules/command/",
+      "icon": "🎯",
+      "color": "#ff6b6b",
+      "status": "operational",
+      "priority": 6
+    },
+    {
+      "id": "ledger",
+      "name_en": "Digital Workforce Ledger",
+      "name_bn": "ডিজিটাল কর্মীবাহিনী লেজার",
+      "description_en": "Immutable record system and blockchain anchor",
+      "description_bn": "অপরিবর্তনীয় রেকর্ড সিস্টেম এবং ব্লকচেইন অ্যাঙ্কর",
+      "path": "/modules/ledger/",
+      "icon": "📔",
+      "color": "#fbbf24",
+      "status": "operational",
+      "priority": 7
+    },
+    {
+      "id": "zone",
+      "name_en": "Zone Coordination Framework",
+      "name_bn": "জোন সমন্বয় কাঠামো",
+      "description_en": "Multi-zone coordination and local governance",
+      "description_bn": "মাল্টি-জোন সমন্বয় এবং স্থানীয় শাসন",
+      "path": "/modules/zone/",
+      "icon": "🏘️",
+      "color": "#06b6d4",
+      "status": "operational",
+      "priority": 8
+    },
+    {
+      "id": "core",
+      "name_en": "Integration Core",
+      "name_bn": "সমন্বয় মূল",
+      "description_en": "API gateway and cross-module synchronization",
+      "description_bn": "এপিআই গেটওয়ে এবং ক্রস-মডিউল সিঙ্ক্রোনাইজেশন",
+      "path": "/modules/core/",
+      "icon": "⚙️",
+      "color": "#64748b",
+      "status": "operational",
+      "priority": 9
+    }
+  ]
+}

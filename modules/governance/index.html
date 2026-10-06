@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Governance & Smart Contracts | NWG</title>
+  <link rel="stylesheet" href="../../app/shared/css/module-base.css" />
+</head>
+<body>
+  <div class="module-shell">
+    <aside class="module-sidebar">
+      <div class="sidebar-header">
+        <img src="../../assets/images/logo.svg" alt="NWG" />
+        <div>
+          <p class="eyebrow">Governance Module</p>
+          <h2>Smart Contracts</h2>
+        </div>
+      </div>
+      <nav id="nav-tree" class="nav-tree"></nav>
+    </aside>
+
+    <main class="module-main">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Module 2</p>
+          <h1>Governance & Smart Contracts</h1>
+        </div>
+        <button id="lang-toggle">EN | BN</button>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card"><span>Active Contracts</span><strong>3,245</strong><small>Running</small></div>
+        <div class="stat-card"><span>Completed</span><strong>12,890</strong><small>Executed</small></div>
+        <div class="stat-card"><span>Rewards Issued</span><strong>₹24.5M</strong><small>Total</small></div>
+        <div class="stat-card"><span>Compliance Rate</span><strong>99.8%</strong><small>Adherence</small></div>
+      </section>
+
+      <div class="module-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Smart Contract Templates</h3>
+            <span class="badge">System</span>
+          </div>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 12px 0; border-bottom: 1px solid rgba(121,183,255,0.1);">Reward Contract</li>
+            <li style="padding: 12px 0; border-bottom: 1px solid rgba(121,183,255,0.1);">Disciplinary Contract</li>
+            <li style="padding: 12px 0; border-bottom: 1px solid rgba(121,183,255,0.1);">Promotion Contract</li>
+            <li style="padding: 12px 0;">Review Contract</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Recent Executions</h3>
+          </div>
+          <div id="execution-list" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="module-panel">
+      <div class="panel">
+        <h3>Governance Status</h3>
+        <p style="margin: 12px 0 0; color: var(--muted); font-size: 0.9rem;">Policy compliance rate: <strong style="color: #47d7b3;">99.8%</strong></p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer"></footer>
+
+  <script type="module">
+    import { initModule } from '../../app/shared/js/module-init.js';
+    await initModule('governance');
+  </script>
+</body>
+</html>

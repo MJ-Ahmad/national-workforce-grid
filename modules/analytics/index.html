@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics & Insights | NWG</title>
+  <link rel="stylesheet" href="../../app/shared/css/module-base.css" />
+</head>
+<body>
+  <div class="module-shell">
+    <aside class="module-sidebar">
+      <div class="sidebar-header">
+        <img src="../../assets/images/logo.svg" alt="NWG" />
+        <div>
+          <p class="eyebrow">Analytics Module</p>
+          <h2>Insights Engine</h2>
+        </div>
+      </div>
+      <nav id="nav-tree" class="nav-tree"></nav>
+    </aside>
+
+    <main class="module-main">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Module 5</p>
+          <h1>Analytics & Recommendation Engine</h1>
+        </div>
+        <button id="lang-toggle">EN | BN</button>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card"><span>Performance Score</span><strong>8.7/10</strong><small>Overall</small></div>
+        <div class="stat-card"><span>Predictive Accuracy</span><strong>94.2%</strong><small>Forecast</small></div>
+        <div class="stat-card"><span>Trend Growth</span><strong>+23%</strong><small>YoY</small></div>
+        <div class="stat-card"><span>Recommendations</span><strong>847</strong><small>Generated</small></div>
+      </section>
+
+      <div class="module-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Performance Metrics</h3>
+          </div>
+          <div id="metrics" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>AI Recommendations</h3>
+          </div>
+          <div id="recommendations" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="module-panel">
+      <div class="panel">
+        <h3>Analytics Status</h3>
+        <p style="margin: 12px 0 0; color: var(--muted);">Real-time processing: <strong style="color: #73e0a9;">Active</strong></p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer"></footer>
+
+  <script type="module">
+    import { initModule } from '../../app/shared/js/module-init.js';
+    await initModule('analytics');
+  </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identity & Verification | NWG</title>
+  <link rel="stylesheet" href="../../app/shared/css/module-base.css" />
+  <style>
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    label { color: var(--muted); font-size: 0.9rem; font-weight: 700; }
+    input, select { border: 1px solid var(--line); background: rgba(15,29,41,0.75); color: var(--text); padding: 12px 14px; border-radius: 10px; }
+    .btn { background: linear-gradient(135deg, #47d7b3, #2bbd9c); border: none; color: #022539; padding: 12px 24px; border-radius: 10px; cursor: pointer; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="module-shell">
+    <aside class="module-sidebar">
+      <div class="sidebar-header">
+        <img src="../../assets/images/logo.svg" alt="NWG" />
+        <div>
+          <p class="eyebrow">Identity Module</p>
+          <h2>DID System</h2>
+        </div>
+      </div>
+      <nav id="nav-tree" class="nav-tree"></nav>
+    </aside>
+
+    <main class="module-main">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Module 1</p>
+          <h1>Identity & Verification System</h1>
+        </div>
+        <button id="lang-toggle">EN | BN</button>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card"><span>Verified</span><strong>2.6M</strong><small>Profiles</small></div>
+        <div class="stat-card"><span>Pending</span><strong>145K</strong><small>Applications</small></div>
+        <div class="stat-card"><span>Rejected</span><strong>32K</strong><small>Cases</small></div>
+        <div class="stat-card"><span>Success Rate</span><strong>98.2%</strong><small>Accuracy</small></div>
+      </section>
+
+      <div class="module-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>DID Registration Form</h3>
+            <span class="badge live">Live</span>
+          </div>
+          <form>
+            <div class="form-group">
+              <label>Full Name (English)</label>
+              <input type="text" placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label>পূর্ণ নাম (বাংলা)</label>
+              <input type="text" placeholder="জন ডো" />
+            </div>
+            <div class="form-group">
+              <label>National ID</label>
+              <input type="text" placeholder="1234567890" />
+            </div>
+            <div class="form-group">
+              <label>Role</label>
+              <select>
+                <option>Team Member</option>
+                <option>Ward Coordinator</option>
+                <option>Union Leader</option>
+                <option>Thana Manager</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Register DID</button>
+          </form>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Recent Verifications</h3>
+          </div>
+          <div id="verification-list" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="module-panel">
+      <div class="panel">
+        <h3>Module Status</h3>
+        <p style="margin: 12px 0 0;">Identity verification system is <strong style="color: #73e0a9;">operational</strong></p>
+        <p style="margin: 12px 0 0; color: var(--muted); font-size: 0.85rem;">Last sync: Just now</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer"></footer>
+
+  <script type="module">
+    import { initModule } from '../../app/shared/js/module-init.js';
+    await initModule('identity');
+  </script>
+</body>
+</html>

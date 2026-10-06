@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zone Coordination | NWG</title>
+  <link rel="stylesheet" href="../../app/shared/css/module-base.css" />
+</head>
+<body>
+  <div class="module-shell">
+    <aside class="module-sidebar">
+      <div class="sidebar-header">
+        <img src="../../assets/images/logo.svg" alt="NWG" />
+        <div>
+          <p class="eyebrow">Zone Module</p>
+          <h2>Coordination</h2>
+        </div>
+      </div>
+      <nav id="nav-tree" class="nav-tree"></nav>
+    </aside>
+
+    <main class="module-main">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Module 8</p>
+          <h1>Zone Coordination Framework</h1>
+        </div>
+        <button id="lang-toggle">EN | BN</button>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card"><span>Active Zones</span><strong>1,200</strong><small>Managed</small></div>
+        <div class="stat-card"><span>Coordinators</span><strong>3,400</strong><small>Active</small></div>
+        <div class="stat-card"><span>Coordination Score</span><strong>9.2/10</strong><small>Efficiency</small></div>
+        <div class="stat-card"><span>Response Rate</span><strong>98.5%</strong><small>Adherence</small></div>
+      </section>
+
+      <div class="module-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Zone Status</h3>
+            <span class="badge live">Live</span>
+          </div>
+          <div id="zone-list" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Coordination Updates</h3>
+          </div>
+          <div id="coordination-feed" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="module-panel">
+      <div class="panel">
+        <h3>Zone Network</h3>
+        <p style="margin: 12px 0 0; color: var(--muted);">Network Status: <strong style="color: #73e0a9;">Healthy</strong></p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer"></footer>
+
+  <script type="module">
+    import { initModule } from '../../app/shared/js/module-init.js';
+    await initModule('zone');
+  </script>
+</body>
+</html>

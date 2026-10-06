@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reporting & Monitoring | NWG</title>
+  <link rel="stylesheet" href="../../app/shared/css/module-base.css" />
+</head>
+<body>
+  <div class="module-shell">
+    <aside class="module-sidebar">
+      <div class="sidebar-header">
+        <img src="../../assets/images/logo.svg" alt="NWG" />
+        <div>
+          <p class="eyebrow">Reporting Module</p>
+          <h2>Live Monitoring</h2>
+        </div>
+      </div>
+      <nav id="nav-tree" class="nav-tree"></nav>
+    </aside>
+
+    <main class="module-main">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Module 4</p>
+          <h1>Real-Time Reporting & Monitoring</h1>
+        </div>
+        <button id="lang-toggle">EN | BN</button>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card"><span>Active Reports</span><strong>1,245</strong><small>Today</small></div>
+        <div class="stat-card"><span>Incidents</span><strong>318</strong><small>Priority</small></div>
+        <div class="stat-card"><span>Avg Response</span><strong>1.2m</strong><small>Time</small></div>
+        <div class="stat-card"><span>Resolution Rate</span><strong>94.5%</strong><small>Success</small></div>
+      </section>
+
+      <div class="module-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Live Incident Feed</h3>
+            <span class="badge live">Live</span>
+          </div>
+          <div id="incident-feed" style="display: flex; flex-direction: column; gap: 10px;"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Alert Notifications</h3>
+          </div>
+          <div id="alert-list" style="display: flex; flex-direction: column; gap: 10px;"></div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="module-panel">
+      <div class="panel">
+        <h3>System Health</h3>
+        <p style="margin: 12px 0 0; color: var(--muted);">Uptime: <strong style="color: #73e0a9;">99.97%</strong></p>
+        <p style="margin: 12px 0 0; color: var(--muted);">Latency: <strong>45ms</strong></p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer"></footer>
+
+  <script type="module">
+    import { initModule } from '../../app/shared/js/module-init.js';
+    await initModule('reporting');
+  </script>
+</body>
+</html>

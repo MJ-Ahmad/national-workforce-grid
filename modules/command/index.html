@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Command Center | NWG</title>
+  <link rel="stylesheet" href="../../app/shared/css/module-base.css" />
+</head>
+<body>
+  <div class="module-shell">
+    <aside class="module-sidebar">
+      <div class="sidebar-header">
+        <img src="../../assets/images/logo.svg" alt="NWG" />
+        <div>
+          <p class="eyebrow">Command Module</p>
+          <h2>Operations HQ</h2>
+        </div>
+      </div>
+      <nav id="nav-tree" class="nav-tree"></nav>
+    </aside>
+
+    <main class="module-main">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Module 6</p>
+          <h1>Election & NGO Command Center</h1>
+        </div>
+        <button id="lang-toggle">EN | BN</button>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card"><span>Active Operations</span><strong>45</strong><small>Ongoing</small></div>
+        <div class="stat-card"><span>Deployed Teams</span><strong>3,200</strong><small>Field</small></div>
+        <div class="stat-card"><span>Success Rate</span><strong>97.3%</strong><small>Operations</small></div>
+        <div class="stat-card"><span>Response Time</span><strong>45s</strong><small>Average</small></div>
+      </section>
+
+      <div class="module-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Task Allocation</h3>
+            <span class="badge live">Live</span>
+          </div>
+          <div id="task-list" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Command Dashboard</h3>
+          </div>
+          <div id="command-status" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="module-panel">
+      <div class="panel">
+        <h3>Operation Status</h3>
+        <p style="margin: 12px 0 0; color: var(--muted);">Command Centre: <strong style="color: #73e0a9;">Ready</strong></p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer"></footer>
+
+  <script type="module">
+    import { initModule } from '../../app/shared/js/module-init.js';
+    await initModule('command');
+  </script>
+</body>
+</html>
