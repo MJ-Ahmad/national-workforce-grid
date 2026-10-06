@@ -1,0 +1,108 @@
+{
+  "surveillance_zones": [
+    {
+      "zone_id": "surveillance-dhaka-central",
+      "name_en": "Dhaka Central Zone",
+      "name_bn": "ঢাকা কেন্দ্রীয় অঞ্চল",
+      "level": "division",
+      "coordinates": [23.8103, 90.4125],
+      "radius_km": 15,
+      "coverage_area_km2": 706,
+      "population": 8000000,
+      "security_level": "critical",
+      "status": "active",
+      "monitoring_assets": {
+        "cctv_cameras": 450,
+        "sensors": 120,
+        "drones": 8,
+        "patrol_units": 25,
+        "mobile_units": 12
+      },
+      "control_center": "command-national",
+      "response_teams": 5,
+      "incidents_24h": 12,
+      "avg_response_time_sec": 95,
+      "last_update": "2026-10-04T14:35:00Z"
+    },
+    {
+      "zone_id": "surveillance-motijheel",
+      "name_en": "Motijheel Sector",
+      "name_bn": "মতিঝিল সেক্টর",
+      "level": "thana",
+      "coordinates": [23.7645, 90.4153],
+      "radius_km": 3,
+      "coverage_area_km2": 28,
+      "population": 350000,
+      "security_level": "high",
+      "status": "active",
+      "monitoring_assets": {
+        "cctv_cameras": 85,
+        "sensors": 24,
+        "drones": 2,
+        "patrol_units": 8,
+        "mobile_units": 3
+      },
+      "control_center": "command-thana",
+      "response_teams": 2,
+      "incidents_24h": 3,
+      "avg_response_time_sec": 120,
+      "last_update": "2026-10-04T14:32:00Z"
+    },
+    {
+      "zone_id": "surveillance-gulshan",
+      "name_en": "Gulshan Sector",
+      "name_bn": "গুলশান সেক্টর",
+      "level": "thana",
+      "coordinates": [23.8103, 90.4125],
+      "radius_km": 4,
+      "coverage_area_km2": 50,
+      "population": 580000,
+      "security_level": "high",
+      "status": "active",
+      "monitoring_assets": {
+        "cctv_cameras": 120,
+        "sensors": 32,
+        "drones": 3,
+        "patrol_units": 12,
+        "mobile_units": 5
+      },
+      "control_center": "command-thana",
+      "response_teams": 3,
+      "incidents_24h": 5,
+      "avg_response_time_sec": 95,
+      "last_update": "2026-10-04T14:30:00Z"
+    },
+    {
+      "zone_id": "surveillance-banani",
+      "name_en": "Banani Sector",
+      "name_bn": "বনানী সেক্টর",
+      "level": "thana",
+      "coordinates": [23.8213, 90.3899],
+      "radius_km": 2.5,
+      "coverage_area_km2": 20,
+      "population": 280000,
+      "security_level": "high",
+      "status": "active",
+      "monitoring_assets": {
+        "cctv_cameras": 65,
+        "sensors": 18,
+        "drones": 1,
+        "patrol_units": 6,
+        "mobile_units": 2
+      },
+      "control_center": "command-thana",
+      "response_teams": 1,
+      "incidents_24h": 2,
+      "avg_response_time_sec": 110,
+      "last_update": "2026-10-04T14:25:00Z"
+    }
+  ],
+  "risk_assessment": {
+    "high_risk_zones": 4,
+    "medium_risk_zones": 12,
+    "low_risk_zones": 28,
+    "total_coverage_zones": 44,
+    "population_under_surveillance": 45000000,
+    "coverage_percentage": 98.4
+  }
+}

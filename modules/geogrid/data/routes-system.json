@@ -1,0 +1,178 @@
+{
+  "land_routes": {
+    "national_highways": [
+      {
+        "id": "highway-1",
+        "name_en": "Dhaka-Chattogram Highway",
+        "name_bn": "ঢাকা-চট্টগ্রাম মহাসড়ক",
+        "type": "national_highway",
+        "priority": "critical",
+        "length_km": 267,
+        "route": [[23.8103, 90.4125], [22.3569, 91.7832]],
+        "coverage_divisions": ["dhaka", "chattogram"],
+        "monitoring_points": 45,
+        "checkpoints": 12,
+        "patrol_units": 18,
+        "security_level": "high",
+        "avg_daily_traffic": 45000,
+        "last_incident": "2026-10-04T12:30:00Z"
+      },
+      {
+        "id": "highway-2",
+        "name_en": "Dhaka-Sylhet Highway",
+        "name_bn": "ঢাকা-সিলেট মহাসড়ক",
+        "type": "national_highway",
+        "priority": "high",
+        "length_km": 245,
+        "route": [[23.8103, 90.4125], [24.8949, 91.8687]],
+        "coverage_divisions": ["dhaka", "sylhet"],
+        "monitoring_points": 38,
+        "checkpoints": 10,
+        "patrol_units": 15,
+        "security_level": "high",
+        "avg_daily_traffic": 32000
+      },
+      {
+        "id": "highway-3",
+        "name_en": "Dhaka-Rangpur Highway",
+        "name_bn": "ঢাকা-রংপুর মহাসড়ক",
+        "type": "national_highway",
+        "priority": "high",
+        "length_km": 350,
+        "route": [[23.8103, 90.4125], [25.7479, 89.2752]],
+        "coverage_divisions": ["dhaka", "rangpur"],
+        "monitoring_points": 52,
+        "checkpoints": 14,
+        "patrol_units": 20,
+        "security_level": "high",
+        "avg_daily_traffic": 28000
+      }
+    ],
+    "district_roads": [
+      {
+        "id": "district-1",
+        "name_en": "Dhaka-Narayanganj Road",
+        "name_bn": "ঢাকা-নারায়ণগঞ্জ সড়ক",
+        "type": "district_road",
+        "priority": "medium",
+        "length_km": 38,
+        "route": [[23.8103, 90.4125], [23.6125, 90.5000]],
+        "coverage_district": "dhaka",
+        "monitoring_points": 8,
+        "patrol_units": 4,
+        "security_level": "medium"
+      }
+    ]
+  },
+  "water_routes": {
+    "rivers": [
+      {
+        "id": "river-padma",
+        "name_en": "Padma River Route",
+        "name_bn": "পদ্মা নদী রুট",
+        "type": "river",
+        "priority": "critical",
+        "length_km": 356,
+        "main_coordinate": [23.4, 90.2],
+        "coverage_divisions": ["dhaka", "rajshahi"],
+        "ports": [
+          {
+            "id": "port-dhaka",
+            "name_en": "Dhaka River Port",
+            "name_bn": "ঢাকা নদী বন্দর",
+            "coordinates": [23.8, 90.4],
+            "capacity_tons": 50000,
+            "security_level": "high",
+            "monitoring_cameras": 32
+          }
+        ],
+        "monitoring_stations": 12,
+        "patrol_boats": 8,
+        "security_level": "high",
+        "avg_daily_vessels": 120
+      },
+      {
+        "id": "river-buriganga",
+        "name_en": "Buriganga River Route",
+        "name_bn": "বুড়িগঙ্গা নদী রুট",
+        "type": "river",
+        "priority": "high",
+        "length_km": 14,
+        "main_coordinate": [23.7, 90.4],
+        "coverage_divisions": ["dhaka"],
+        "ports": [
+          {
+            "id": "port-buriganga",
+            "name_en": "Buriganga Port",
+            "name_bn": "বুড়িগঙ্গা বন্দর",
+            "coordinates": [23.7, 90.4],
+            "capacity_tons": 10000,
+            "security_level": "high"
+          }
+        ],
+        "monitoring_stations": 8,
+        "patrol_boats": 4,
+        "security_level": "high"
+      }
+    ]
+  },
+  "air_routes": {
+    "domestic_corridors": [
+      {
+        "id": "air-dhaka-chattogram",
+        "name_en": "Dhaka - Chattogram Corridor",
+        "name_bn": "ঢাকা - চট্টগ্রাম কারিডর",
+        "type": "domestic",
+        "priority": "critical",
+        "distance_km": 262,
+        "start_point": [23.8103, 90.4125],
+        "end_point": [22.3569, 91.7832],
+        "cruise_altitude_ft": 10000,
+        "coverage_divisions": ["dhaka", "chattogram"],
+        "airports": ["Dhaka International", "Chattogram International"],
+        "radar_coverage_points": 25,
+        "daily_flights": 45,
+        "security_level": "critical"
+      },
+      {
+        "id": "air-dhaka-sylhet",
+        "name_en": "Dhaka - Sylhet Corridor",
+        "name_bn": "ঢাকা - সিলেট কারিডর",
+        "type": "domestic",
+        "priority": "high",
+        "distance_km": 195,
+        "start_point": [23.8103, 90.4125],
+        "end_point": [24.8949, 91.8687],
+        "cruise_altitude_ft": 8000,
+        "coverage_divisions": ["dhaka", "sylhet"],
+        "airports": ["Dhaka International", "Sylhet International"],
+        "radar_coverage_points": 18,
+        "daily_flights": 28,
+        "security_level": "high"
+      }
+    ],
+    "international_corridors": [
+      {
+        "id": "air-dhaka-international-hub",
+        "name_en": "Dhaka International Air Hub",
+        "name_bn": "ঢাকা আন্তর্জাতিক এয়ার হাব",
+        "type": "international",
+        "priority": "critical",
+        "hub_location": [23.8103, 90.4125],
+        "primary_airport": "Dhaka International Airport",
+        "airspace_altitude_ft": 35000,
+        "coverage_divisions": ["dhaka", "narayanganj"],
+        "international_destinations": 45,
+        "daily_international_flights": 120,
+        "radar_coverage_points": 35,
+        "security_level": "critical",
+        "air_traffic_control": {
+          "call_sign": "DHAKA_ATC",
+          "frequency_mhz": 119.7,
+          "active_24h": true,
+          "personnel_count": 120
+        }
+      }
+    ]
+  }
+}

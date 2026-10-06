@@ -1,0 +1,170 @@
+{
+  "command_structure": [
+    {
+      "level": 0,
+      "name_en": "National Command Center",
+      "name_bn": "জাতীয় কমান্ড সেন্টার",
+      "id": "command-national",
+      "location": [23.8103, 90.4125],
+      "authority": "National Geo Director",
+      "staff_count": 250,
+      "operational_area": "All of Bangladesh",
+      "responsibilities": [
+        "Strategic oversight",
+        "National-level policy enforcement",
+        "Crisis management",
+        "Multi-division coordination",
+        "National resource allocation"
+      ],
+      "communication_bandwidth": "gigabit",
+      "real_time_feeds": 500,
+      "decision_authority": "absolute",
+      "escalation_target": "Prime Minister Office"
+    },
+    {
+      "level": 1,
+      "name_en": "Division Command Center",
+      "name_bn": "বিভাগ কমান্ড সেন্টার",
+      "id": "command-division",
+      "location": [23.8103, 90.4125],
+      "authority": "Division Head",
+      "operational_area": "Entire Division",
+      "staff_count": 120,
+      "responsibilities": [
+        "Divisional coordination",
+        "District supervision",
+        "Resource distribution",
+        "Emergency response",
+        "Performance monitoring"
+      ],
+      "communication_bandwidth": "100mbps",
+      "real_time_feeds": 200,
+      "decision_authority": "division-wide",
+      "escalation_target": "National Command"
+    },
+    {
+      "level": 2,
+      "name_en": "District Monitoring Center",
+      "name_bn": "জেলা পর্যবেক্ষণ কেন্দ্র",
+      "id": "command-district",
+      "location": [23.8103, 90.4125],
+      "authority": "District Coordinator",
+      "operational_area": "Entire District",
+      "staff_count": 80,
+      "responsibilities": [
+        "District operations",
+        "Thana coordination",
+        "Incident analysis",
+        "Resource tracking",
+        "Performance reporting"
+      ],
+      "communication_bandwidth": "50mbps",
+      "real_time_feeds": 150,
+      "decision_authority": "district-level",
+      "escalation_target": "Division Command"
+    },
+    {
+      "level": 3,
+      "name_en": "Thana Control Center",
+      "name_bn": "থানা নিয়ন্ত্রণ কেন্দ্র",
+      "id": "command-thana",
+      "location": [23.7645, 90.4153],
+      "authority": "Thana Manager",
+      "operational_area": "Thana Jurisdiction",
+      "staff_count": 35,
+      "responsibilities": [
+        "Real-time surveillance",
+        "Incident response",
+        "Union coordination",
+        "Field operations",
+        "Local reporting"
+      ],
+      "communication_bandwidth": "50mbps",
+      "real_time_feeds": 85,
+      "decision_authority": "thana-level",
+      "escalation_target": "District Monitoring"
+    },
+    {
+      "level": 4,
+      "name_en": "Union Coordination Hub",
+      "name_bn": "ইউনিয়ন সমন্বয় কেন্দ্র",
+      "id": "command-union",
+      "location": [23.7650, 90.4150],
+      "authority": "Union Leader",
+      "operational_area": "Union Area",
+      "staff_count": 20,
+      "responsibilities": [
+        "Area coordination",
+        "Ward management",
+        "Community liaison",
+        "Activity tracking",
+        "Local reporting"
+      ],
+      "communication_bandwidth": "25mbps",
+      "real_time_feeds": 50,
+      "decision_authority": "union-level",
+      "escalation_target": "Thana Control"
+    },
+    {
+      "level": 5,
+      "name_en": "Ward Response Node",
+      "name_bn": "ওয়ার্ড প্রতিক্রিয়া নোড",
+      "id": "command-ward",
+      "location": [23.7650, 90.4150],
+      "authority": "Ward Coordinator",
+      "operational_area": "Ward Area",
+      "staff_count": 8,
+      "responsibilities": [
+        "Ward-level execution",
+        "Neighborhood management",
+        "Incident first response",
+        "Community communication",
+        "Data collection"
+      ],
+      "communication_bandwidth": "10mbps",
+      "real_time_feeds": 20,
+      "decision_authority": "ward-level",
+      "escalation_target": "Union Coordination"
+    },
+    {
+      "level": 6,
+      "name_en": "Neighborhood Observation Post",
+      "name_bn": "পাড়া পর্যবেক্ষণ কেন্দ্র",
+      "id": "command-neighborhood",
+      "location": [23.7650, 90.4150],
+      "authority": "Neighborhood Observer",
+      "operational_area": "Neighborhood",
+      "staff_count": 3,
+      "responsibilities": [
+        "Local observation",
+        "Incident reporting",
+        "Community engagement",
+        "Emergency alert",
+        "Data submission"
+      ],
+      "communication_bandwidth": "5mbps",
+      "real_time_feeds": 5,
+      "decision_authority": "observation-only",
+      "escalation_target": "Ward Response"
+    }
+  ],
+  "decision_flow": "Neighborhood → Ward → Union → Thana → District → Division → National",
+  "escalation_time_limits": {
+    "neighborhood_to_ward": 10,
+    "ward_to_union": 15,
+    "union_to_thana": 20,
+    "thana_to_district": 15,
+    "district_to_division": 10,
+    "division_to_national": 5
+  },
+  "critical_incident_threshold": {
+    "automatic_escalation": true,
+    "escalation_level_bypass_enabled": true,
+    "direct_national_command_trigger": {
+      "security_breach": true,
+      "mass_casualty": true,
+      "infrastructure_collapse": true,
+      "natural_disaster": true
+    }
+  }
+}

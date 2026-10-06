@@ -1,0 +1,310 @@
+{
+  "country": {
+    "name_en": "Bangladesh",
+    "name_bn": "বাংলাদেশ",
+    "area_km2": 56000,
+    "population": 170000000,
+    "timezone": "Asia/Dhaka",
+    "total_divisions": 8,
+    "total_districts": 64
+  },
+  "divisions": [
+    {
+      "id": "div-001-dhaka",
+      "name_en": "Dhaka Division",
+      "name_bn": "ঢাকা বিভাগ",
+      "code": "DH",
+      "coordinates": [23.8103, 90.4125],
+      "area_km2": 12000,
+      "population": 80000000,
+      "head_rank": "Division Head",
+      "head_name": "Dhaka Division Commander",
+      "status": "operational",
+      "surveillance_zones": 28,
+      "control_centers": 3,
+      "districts": [
+        {
+          "id": "dist-001-dhaka-city",
+          "name_en": "Dhaka",
+          "name_bn": "���াকা",
+          "coordinates": [23.8103, 90.4125],
+          "area_km2": 1463,
+          "population": 15000000,
+          "manager_rank": "District Coordinator",
+          "status": "critical",
+          "thanas": [
+            {
+              "id": "thana-001-motijheel",
+              "name_en": "Motijheel",
+              "name_bn": "মতিঝিল",
+              "coordinates": [23.7645, 90.4153],
+              "area_km2": 28,
+              "population": 350000,
+              "manager_rank": "Thana Manager",
+              "status": "active",
+              "cctv_cameras": 85,
+              "sensors": 24,
+              "patrol_units": 8,
+              "response_time_sec": 120,
+              "unions": [
+                {
+                  "id": "union-001-1",
+                  "name_en": "Motijheel Union 1",
+                  "name_bn": "মতিঝিল ইউনিয়ন ১",
+                  "coordinates": [23.7650, 90.4150],
+                  "area_km2": 14,
+                  "population": 175000,
+                  "leader_rank": "Union Leader",
+                  "status": "active",
+                  "wards": [
+                    {
+                      "id": "ward-001-1-1",
+                      "name_en": "Ward 1",
+                      "name_bn": "ওয়ার্ড ১",
+                      "coordinates": [23.7650, 90.4150],
+                      "area_km2": 1.4,
+                      "population": 17500,
+                      "coordinator_rank": "Ward Coordinator",
+                      "status": "active",
+                      "neighborhoods": [
+                        {
+                          "id": "neighborhood-001-1-1-1",
+                          "name_en": "Neighborhood A",
+                          "name_bn": "পাড়া এ",
+                          "coordinates": [23.7650, 90.4150],
+                          "area_km2": 0.35,
+                          "population": 4375,
+                          "observer_rank": "Neighborhood Observer",
+                          "status": "active",
+                          "last_incident": "2026-10-04T14:32:00Z",
+                          "incidents_24h": 2
+                        },
+                        {
+                          "id": "neighborhood-001-1-1-2",
+                          "name_en": "Neighborhood B",
+                          "name_bn": "পাড়া বি",
+                          "coordinates": [23.7655, 90.4155],
+                          "area_km2": 0.35,
+                          "population": 4375,
+                          "observer_rank": "Neighborhood Observer",
+                          "status": "active",
+                          "last_incident": "2026-10-04T13:15:00Z",
+                          "incidents_24h": 1
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ward-001-1-2",
+                      "name_en": "Ward 2",
+                      "name_bn": "ওয়ার্ড ২",
+                      "coordinates": [23.7660, 90.4160],
+                      "area_km2": 1.4,
+                      "population": 17500,
+                      "coordinator_rank": "Ward Coordinator",
+                      "status": "active",
+                      "neighborhoods": []
+                    }
+                  ]
+                },
+                {
+                  "id": "union-001-2",
+                  "name_en": "Motijheel Union 2",
+                  "name_bn": "মতিঝিল ইউনিয়ন ২",
+                  "coordinates": [23.7640, 90.4140],
+                  "area_km2": 14,
+                  "population": 175000,
+                  "leader_rank": "Union Leader",
+                  "status": "active",
+                  "wards": []
+                }
+              ]
+            },
+            {
+              "id": "thana-002-gulshan",
+              "name_en": "Gulshan",
+              "name_bn": "গুলশান",
+              "coordinates": [23.8103, 90.4125],
+              "area_km2": 45,
+              "population": 580000,
+              "manager_rank": "Thana Manager",
+              "status": "active",
+              "cctv_cameras": 120,
+              "sensors": 32,
+              "patrol_units": 12,
+              "response_time_sec": 95,
+              "unions": []
+            },
+            {
+              "id": "thana-003-banani",
+              "name_en": "Banani",
+              "name_bn": "বনানী",
+              "coordinates": [23.8213, 90.3899],
+              "area_km2": 22,
+              "population": 280000,
+              "manager_rank": "Thana Manager",
+              "status": "active",
+              "cctv_cameras": 65,
+              "sensors": 18,
+              "patrol_units": 6,
+              "response_time_sec": 110,
+              "unions": []
+            },
+            {
+              "id": "thana-004-kawran-bazar",
+              "name_en": "Kawran Bazar",
+              "name_bn": "কাওরান বাজার",
+              "coordinates": [23.7665, 90.3765],
+              "area_km2": 18,
+              "population": 220000,
+              "manager_rank": "Thana Manager",
+              "status": "active",
+              "cctv_cameras": 45,
+              "sensors": 12,
+              "patrol_units": 5,
+              "response_time_sec": 125,
+              "unions": []
+            }
+          ]
+        },
+        {
+          "id": "dist-002-narayanganj",
+          "name_en": "Narayanganj",
+          "name_bn": "নারায়ণগঞ্জ",
+          "coordinates": [23.6125, 90.5000],
+          "area_km2": 683,
+          "population": 2500000,
+          "manager_rank": "District Coordinator",
+          "status": "active",
+          "thanas": []
+        },
+        {
+          "id": "dist-003-gazipur",
+          "name_en": "Gazipur",
+          "name_bn": "গাজীপুর",
+          "coordinates": [23.9981, 90.4155],
+          "area_km2": 1741,
+          "population": 2700000,
+          "manager_rank": "District Coordinator",
+          "status": "active",
+          "thanas": []
+        },
+        {
+          "id": "dist-004-tangail",
+          "name_en": "Tangail",
+          "name_bn": "টাঙ্গাইল",
+          "coordinates": [24.2510, 89.9162],
+          "area_km2": 3414,
+          "population": 1850000,
+          "manager_rank": "District Coordinator",
+          "status": "active",
+          "thanas": []
+        }
+      ]
+    },
+    {
+      "id": "div-002-chattogram",
+      "name_en": "Chattogram Division",
+      "name_bn": "চট্টগ্রাম বিভাগ",
+      "code": "CT",
+      "coordinates": [22.3569, 91.7832],
+      "area_km2": 13000,
+      "population": 50000000,
+      "head_rank": "Division Head",
+      "head_name": "Chattogram Division Commander",
+      "status": "operational",
+      "surveillance_zones": 22,
+      "control_centers": 2,
+      "districts": []
+    },
+    {
+      "id": "div-003-khulna",
+      "name_en": "Khulna Division",
+      "name_bn": "খুলনা বিভাগ",
+      "code": "KH",
+      "coordinates": [22.8456, 89.5403],
+      "area_km2": 9000,
+      "population": 20000000,
+      "head_rank": "Division Head",
+      "head_name": "Khulna Division Commander",
+      "status": "operational",
+      "surveillance_zones": 15,
+      "control_centers": 1,
+      "districts": []
+    },
+    {
+      "id": "div-004-rajshahi",
+      "name_en": "Rajshahi Division",
+      "name_bn": "রাজশাহী বিভাগ",
+      "code": "RJ",
+      "coordinates": [24.3745, 88.5670],
+      "area_km2": 8000,
+      "population": 18000000,
+      "head_rank": "Division Head",
+      "head_name": "Rajshahi Division Commander",
+      "status": "operational",
+      "surveillance_zones": 12,
+      "control_centers": 1,
+      "districts": []
+    },
+    {
+      "id": "div-005-barishal",
+      "name_en": "Barishal Division",
+      "name_bn": "বরিশাল বিভাগ",
+      "code": "BR",
+      "coordinates": [22.7010, 90.3535],
+      "area_km2": 3500,
+      "population": 10000000,
+      "head_rank": "Division Head",
+      "head_name": "Barishal Division Commander",
+      "status": "operational",
+      "surveillance_zones": 8,
+      "control_centers": 1,
+      "districts": []
+    },
+    {
+      "id": "div-006-sylhet",
+      "name_en": "Sylhet Division",
+      "name_bn": "সিলেট বিভাগ",
+      "code": "SY",
+      "coordinates": [24.8949, 91.8687],
+      "area_km2": 2000,
+      "population": 12000000,
+      "head_rank": "Division Head",
+      "head_name": "Sylhet Division Commander",
+      "status": "operational",
+      "surveillance_zones": 10,
+      "control_centers": 1,
+      "districts": []
+    },
+    {
+      "id": "div-007-rangpur",
+      "name_en": "Rangpur Division",
+      "name_bn": "রংপুর বিভাগ",
+      "code": "RG",
+      "coordinates": [25.7479, 89.2752],
+      "area_km2": 2500,
+      "population": 15000000,
+      "head_rank": "Division Head",
+      "head_name": "Rangpur Division Commander",
+      "status": "operational",
+      "surveillance_zones": 9,
+      "control_centers": 1,
+      "districts": []
+    },
+    {
+      "id": "div-008-mymensingh",
+      "name_en": "Mymensingh Division",
+      "name_bn": "ময়মনসিংহ বিভাগ",
+      "code": "MY",
+      "coordinates": [24.7471, 90.4203],
+      "area_km2": 2000,
+      "population": 12000000,
+      "head_rank": "Division Head",
+      "head_name": "Mymensingh Division Commander",
+      "status": "operational",
+      "surveillance_zones": 9,
+      "control_centers": 1,
+      "districts": []
+    }
+  ]
+}
